@@ -1,0 +1,584 @@
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    color: #444;
+    background: #e5e5e5;
+    background-image: url(images/bg-body.png);
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.4;
+}
+
+a {text-decoration: none}
+a, a:visited {color: #035aa2}
+p {margin: 0 0 4px 0}
+
+
+#wrapper {padding: 0px; 
+          width: 95%;
+          max-width: 1200px;
+          margin: 0 auto;
+          min-height: 600px;
+}
+
+#inner {         
+    clear: both; 
+    background: rgba(255,255,255,.9);         
+    padding: 20px;
+}
+
+#rightcol {width: 285px; float: right}
+
+#rightcol>div {width: 100%;}
+
+#leftcol {width: calc(100% - 340px); display: inline-block}
+
+
+
+#tasks {
+    display: block; 
+    margin: 10px 0;
+    xorder-top: 1px solid rgba(0,0,0,.2);
+    xborder-bottom: 1px solid rgba(0,0,0,.2);
+    background: rgba(255,255,255,.5);
+}
+
+#tasks a {
+    display: inline-block;
+    font-size: 16px;
+    padding: 6px 16px;
+    margin: 6px  ;
+    border-radius: 2px;
+}
+
+a#delete,  #deleteImage {float: right; margin-right: 10px; cursor: pointer}
+
+
+
+button, .btn, .btnSmall, .lens {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fce97e+0,feda00+100 */
+    background: #035aa2;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    color: rgba(255,255,255,.9)!important;
+    margin: 0 0 10px;
+    padding: 5px 10px;
+    xtext-shadow: 0 1px 2px #f1fa02;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover, .btnSmall:hover, .list a:hover {
+    color: rgba(0,0,0,.85);
+}
+
+.btnSmall {
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 90%;
+}
+
+.btnRed {background: crimson!important}
+
+
+.box {
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 5px 0;
+    background: #eee;
+    display: inline-block
+}
+
+.box h3 {
+    margin: -20px -20px 12px -20px;
+    padding: 8px;
+    text-transform: uppercase;
+    font-size: 12px; 
+    color: white;
+    background: #ccc;
+    border-bottom: 1px solid #ccc
+}
+
+
+
+xxxa#add {background: #005c75; color: white; border: 1px solid none }
+a#delete, #deleteImage {background: coral; color: white; border: 1px solid coral; }
+#multiselectTasks a {display: inline-block; padding: 9px 0px 0 9px}
+#multiselectTasks a:hover{color: tomato}
+
+
+.lightbox {
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+}
+
+.lightbox div {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 3%;
+    margin: 20px auto;
+    border: 3px solid silver;
+}
+
+
+/* menus - general  */
+
+ul.horizontal {margin: 0; padding: 0; list-style-type: none; height: 36px; }
+
+
+ul.horizontal a {
+    font-weight: bold;
+    color: rgba(0,0,0, .7); 
+    display: block; 
+    padding: 10px 8px; 
+    background: rgba(255,255,255, .6);
+    vertical-align: top;
+}
+
+ul.horizontal a:hover {background: rgba(255,255,255,.82); color: #111}
+ul.horizontal a.active {background: rgba(255,255,255,.9);
+                        color: #035aa2;
+                        border-top: 3px solid #035aa2;
+}
+
+ul.horizontal li {float: left; margin-right: 5px; }
+
+
+ul.menu{list-style-type: none}
+ul.menu a{padding: 4px 8px; margin: 2px; background: silver; cursor: pointer; display: block    }
+ul.menu a:hover {background-color: #cfe200}
+
+
+
+#footer {margin: 20px auto; text-align: center; color: white; }
+
+
+.list {width: 100%; border-collapse: collapse}
+table td, table th {padding: 4px 7px;  text-align: left;}
+.list th {background-color: white; border-bottom: 1px dotted rgba(100,115,0,.4);          }
+.list td:last-child, table.list th:last-child {text-align: right; }
+.list a {  color: #035aa2;
+           font-weight: bold;
+           margin: 3px 0;
+}
+
+.list a.lens {display: block; text-align: center}
+
+.list .sub a {font-size: 85%;}
+
+.list .numeric {text-align: right}
+
+.striped th {background: rgba(3,90,162,.3); color: rgba(0,0,0,.5); font-size: 11px; text-transform: uppercase; 
+             border-left: 1px solid #f5f5f5;
+             border-bottom: 1px solid #bbb
+}
+.striped tr:nth-child(even) td {background: rgba(115,110,50,.1)}
+
+
+td.check {width: 30px; text-align: center}
+td.status {width: 50px; text-align: center}
+.date {white-space: nowrap; width: 60px; }
+th.id {text-align: left!important}
+td.id {width: 32px; text-align: right; }
+
+input {padding: 3px 4px}
+
+input, select, textarea {
+    font-size: 110%
+}
+
+table.detail th {text-align: right; padding: 10px 10px 0 0; vertical-align: top}
+
+table.detail textarea {
+    background-color: white; 
+    font-size: 100%;
+    width: 100%;
+    padding: 3px;
+    height: 160px
+}
+
+
+table.detail .bigbox {
+    height: 200px;
+    width: 440px;
+}
+
+table.detail input[name="synonyme"] {font-style: italic; color: grey}
+
+
+
+table.detail td {padding: 3px; height: 40px}
+
+
+th.header {    cursor: pointer; 
+               background: white url(images/icons/icon-sort-down.png) right 6px no-repeat;
+
+}
+th.headerSortDown {background: white url(images/icons/icon-sort-down-active.png)   right 6px no-repeat; }
+th.headerSortUp { background: white url(images/icons/icon-sort-up-active.png)  right 6px no-repeat; }
+
+/* media */
+
+table.imagetable td {border: 1px solid white}
+table.imagetable td.selected, .file.selected {
+    background: gold!important;
+    border: 1px solid #333
+}
+
+
+
+#folders {list-style-type: none; margin: 0; padding: 0}
+
+
+ul#files { list-style-type: none; margin: 0; padding: 0;  max-width: 300px }
+.files a {cursor: pointer;
+           padding: 3px 8px;
+           margin: 3px;
+           background: #eee;
+           border: 1px solid white;
+           clear: both;
+}
+a.file {
+    font-size: 13px;
+    display: block;
+    cursor: pointer;
+    padding: 2px 4px
+}
+
+a.file:nth-child(odd) {background-color: #ddd}
+
+
+.tag, .tagbox a  {display: inline-block;
+                  background: #eee;  color: #777;  
+                  padding: 3px 5px;   margin: 4px;
+                  border: 1px solid silver; border-radius: 4px;
+                  cursor: crosshair}
+
+#sortenList { width: 270px;}
+
+.popup {position: absolute;
+        max-width: 300px;
+        background: white; 
+        padding: 5px; 
+        box-shadow: 2px 2px 2px #aaa; 
+
+        border: 1px solid silver }
+.popup a {cursor: pointer; color: #9ab800; display: block; padding: 4px }
+.popup a:hover {color: white; background: #a9b800}
+
+
+#images img {width: 100%; margin: 10px 0; }
+.imageContainer {display: inline-block}
+.imageMenu { position: absolute; z-index: 9 }
+.mainimage{border: 2px solid #95cb0d}
+
+
+/*  login  */
+#login label {
+    background: white;
+    border: 1px solid silver;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    float: left; 
+    margin: 0;
+    height: 28px;
+    width: 28px;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 4px 4px 4px 7px;
+
+
+}
+
+#login label:before {text-align: center}
+
+#login input {
+    font-size: 24px;
+    padding: 2px 6px;
+    height: 38px;
+    margin-bottom: 15px;
+    border: 1px solid silver;
+    border-left: none;
+}
+
+#btnLogout {float: right; 
+            cursor: pointer;   
+}
+
+button {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.small {
+    font-size: 12px;
+}
+
+
+#debug {background: rgba(0,0,0,.7); color: white}
+
+.msg {
+    padding: 10px 15px;
+    margin: 10px 0;
+    background: ivory;
+    color: #035aa2; 
+    border: 1px solid #035aa2;
+    border-radius: 4px
+}
+
+.box2 {
+    padding: 20px; 
+    background: #F9F1C7;
+    border: 1px dotted #eda
+}
+
+.box2 h4 {font-size: 20px; padding: 0 0 6px 0; margin: 0 0 6px 0; border-bottom: 1px dotted #666}
+
+.box3 {
+    padding: 20px; 
+    background: white;
+    margin-bottom: 10px
+}
+
+.box3 h4 {
+    font-size: 110%;
+    margin: 0 0 5px 0;
+    background: #ddd; 
+    padding: 5px 20px;
+    margin: -10px 0 10px -20px;
+    box-shadow: 1px 1px 0 #bbb;
+}
+
+.box4 {
+    background: #eee;
+    padding: 20px; 
+    border: 1px dotted #aba
+}
+
+.box4 a {color: #444; text-decoration: underline}
+
+
+.boxSideline {
+    xborder: 1px dotted white;
+    background: rgba(255,255,255,.3);
+    border-left: 4px solid white; padding: 10px; }
+
+
+/*  general  */
+
+form {margin: 0}
+
+.flexbox, .flexRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    clear: both;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.flexbox>div, .flexRow>div {
+    flex: 1 1 0;
+}
+
+.flexRow.equal>div, .flexRow>p {flex: 1; padding: 20px; margin: 5px} /* equal width */
+
+
+input[type=checkbox]
+{
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(1.4); /* IE */
+    -moz-transform: scale(1.4); /* FF */
+    -webkit-transform: scale(1.4); /* Safari and Chrome */
+    -o-transform: scale(1.4); /* Opera */
+
+}
+
+
+.lens {   padding: 5px 15px;
+          border-radius: 20px; 
+          font-size: 85%;
+          opacity: 0.8;
+}
+.lens.small {padding: 3px 10px}
+
+.lens:hover {opacity: 1}
+
+
+i.active {background: silver}
+.floatLeft {float: left;
+           margin: 0 20px 20px 0
+}
+.floatRight {float: right;
+margin: 0 0px 20px 20px
+}
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* end slider */
+
+
+
+
+#formDetail input {box-sizing: border-box; width: 100%}
+#formDetail textarea {width: 100%; height: 200px}
+#formDetail textarea.short {width: 100%; height: 60px}
+
+
+#formDetail input[type="radio"], #formDetail input[type="checkbox"] {width: 30px}
+
+#formDetail .numeric {width: 80px; text-align: right}
+
+#formDetail .date {width: 20ch}
+
+
+
+.key {width: 100px; text-align: right}
+
+
+
+
+
+table.detail {
+    width: calc(97% - 285px);
+}
+
+
+
+
+
+[class^="icon-"], [class*=" icon-"] {
+    padding: 0px 7px 0 0;    
+}
+
+
+
+.light {color: rgba(255,255,255, 0.7)}
+
+.done {background: lightgreen;}
+.warning {background: wheat;}
+.hidden {display: none!important;}
+.small {font-size: 80%!important}
+
+.big {font-size: 125%!important}
+.bigger {font-size: 150%!important}
+.biggest {font-size: 175%!important}
+
+.lined td , .lined th {border-bottom: 1px dotted silver}
+.lined tr:nth-child(even) td, .lined tr:nth-child(even) th {background: rgba(255,255,255,.5)}
+
+hr { clear: both; color: rgba(0,0,0,.6); margin: 10px 0; }
+hr.dotted {  border:none;  border-top:1px dotted #aaa;   height:1px;}
+
+.border {border: 1px solid silver}
+
+legend {
+    display: block; width: 100%;
+
+    opacity: 0.7; border-top: 1px dotted silver; 
+    padding-top: 10px;
+    margin-top: 10px
+}
+
+legend span, legend [class^="icon-"], legend [class*=" icon-"] { font-size: 90%!important; }
+
+legend span {margin-right: 30px}
+
+
+.clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table { border-spacing: 0 }
+
+.pad {padding: 2%}
+
+.pullright {float: right}
+
+select:invalid { color: gray; }
+.half {width: 45%}
+.full {width: 90%!important}
+.invalid {background: pink}
+.opaque {opacity: 0.4;  }
+.top {vertical-align: top}
+.center {text-align: center}
+.red{color: crimson!important}
+.golden {background: goldenrod; }
+
+.disabled {    background: silver; color: #999; font-size: 90%; outline: none; border: none}
+
+
+/* jqte editor overrides */
+.jqte {margin-top: 6px!important}
+.jqte_editor {min-height: 300px!important;
+              background: cornsilk!important
+}

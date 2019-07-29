@@ -1,0 +1,507 @@
+
+/* FONTS */
+/*@font-face {
+    font-family: UniversLTbold;
+    src: url("https://www.tailored-blanks.com/sites/all/themes/tailored_blanks/fonts/9fa24f1f-00d8-4d28-910f-78e925eaead6.woff2") format("opentype");
+    
+}
+
+@font-face {
+    font-family: UniversLTthin;
+    src: url("https://www.tailored-blanks.com/sites/all/themes/tailored_blanks/fonts/9fa24f1f-00d8-4d28-910f-78e925eaead6.woff2") format("opentype");
+}*/
+
+/*  
+wisco red: #c4261d
+bao blue: #083e88;}
+*/
+
+body {
+
+    xxxfont-family: "Roboto", sans-serif;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    /*font-family: "UniversLTthin", arial;*/
+    font-size: 15px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+    xbackground: linear-gradient(to bottom, #444 0%,#888 100%); 
+    background-color: #e5e5e5;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    color: #444;
+    box-sizing: border-box;
+}
+
+
+body.frontpage {
+   background-image: url(../images/bg/ueber.jpg);
+    background-size: cover;
+    background-position: center -150px;
+}
+
+body.produkte {     
+    background-image: url(../images/bg/produkte.jpg);
+    background-position: right 100px;
+    background-size: contain;
+}
+body.service {   
+    background-image: url(../images/bg/service2.jpg);
+    background-position: right -50px;
+    background-size: contain;
+}
+
+body.c3bcber {
+    background-image: url(../images/bg/ueber.jpg);
+    background-position: right 127px;
+}
+
+body.innovationen {
+    background-image: url(../images/bg/innovationen.jpg);
+      background-position: right 127px;
+}
+
+body.contact {
+    background-image: url(../images/bg/kontakt.jpg);
+       background-position: center 127px;
+}
+
+body div { box-sizing: border-box; }
+
+h1 {
+    margin-top: 0.5em;
+    font-size: 2em
+}
+
+h2 {  xcolor: #083e88;}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#wrapperContent {
+    margin-top: 435px;
+    min-height: 500px;
+    background: white;
+    padding: 40px
+}
+
+.frontpage #wrapperContent {    margin-top: 20px;} 
+
+#header {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: white;
+    z-index: 100
+}
+
+.clip1 {
+    clip-path: polygon(10 0, 40 0, 50 10, 60 0, 100 0, 100 100, 60 100, 50 90, 40 400, 10 100, 0 90, 0 10);
+}
+
+.wrapInner {
+    width: 1180px;
+    margin: auto;
+}
+.floater {float: left;}
+
+#logo {
+    width: 260px;
+    margin-top: 25px 
+}
+
+#claim {     
+    xxxtext-align: right;
+    position: absolute;
+    top: 174px;
+    left: 0%;
+    background: rgba(255,255,255,.9);
+    xbackground-image: linear-gradient(180deg, #eee, #ddd);
+    padding: 20px 40px 20px 120px;
+    margin: 0;
+    font-size: 24px;
+    color: #999;
+    font-weight: normal;
+
+    xxxborder-top: 3px solid rgba(237,37,9,.6);
+
+    xxxtext-shadow: 1px 1px 0px rgba(0,0,0,.6);
+}
+
+#claim h3 {
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 0;
+    color: #083e88;
+    text-shadow: none;
+}
+
+.red {color: #083e88}
+
+/*
+#claim {     
+    position: absolute;
+    top: 350px;
+    left: 47%;
+    width: 100%;
+   perspective: 1000px;
+}
+
+#claim h3 {
+    transform: rotateY(10deg) rotateZ(4.3deg);
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+}*/
+
+
+
+nav {
+    display: block; 
+    font-size: 24px
+}
+
+nav ul {
+    float: right;
+    list-style-type: none;
+
+
+}
+
+nav li {float: left;
+        display: inline-block;
+        margin: 10px
+}
+
+#mainmenu ul {margin-top: 37px; margin-bottom: 4px}
+
+#mainmenu a {
+    color: #666;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 18px
+}
+
+#mainmenu a:before {
+    content: "□ ";
+
+    color: #083e88;
+    opacity: 0.5
+}
+
+#mainmenu a:hover, #mainmenu a.active {color: #083e88}
+
+#mainmenu a:hover:before, #mainmenu a.active:before {
+    opacity: 1;
+    content: "■ ";
+}
+
+#languages {margin-top: 10px}
+
+#languages a {font-weight: normal; font-size: 85%}
+#languages a.active {font-weight: bold; }
+
+
+a {color: #083e88; font-weight: bold; text-decoration: none}
+
+#redLine {
+    width: 100%; 
+    height: 10px; 
+    background-color: #c4261d;
+    background: linear-gradient(to right, #c4c4c4 0%, #c4c4c4 25%, #083e88 40%,  #c4c4c4 65%,  #c4c4c4 100%);
+    background-size: 500% ;
+    animation: laser 6s ease infinite;
+    border-bottom: 7px solid silver;
+    z-index: 100
+}
+
+@keyframes laser { 
+    0%{background-position:0% 50%}
+    60%{background-position:100% 50%}
+    100%{background-position:100% 50%}
+}
+
+
+#baoCopy {
+    position: absolute;
+    top: 450px;
+/*    left: 50%;
+    margin-left: 400px;*/
+right: 100px
+    
+}
+
+
+#content {
+    width: 100%;
+    background: white;
+    padding: 30px;
+    margin-top: 60px
+}
+
+.content h1 {
+    box-sizing: border-box;
+    color: rgb(78, 78, 84);
+    font-family: "Univers LT W04_55 Roman1475960",Arial,Helvetica,sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+
+.content h2 {
+    color: rgb(78, 78, 84);
+    font-size: 32px;
+    font-weight: 400;
+    height: 32px;
+    left: auto;
+    line-height: 32px;
+    margin-bottom: 28px;
+}
+
+.content h3 {
+    color: rgb(78, 78, 84);
+   
+}
+
+
+.flexbox {
+    display: flex;
+    flex-wrap: no-wrap;
+}
+
+.flexbox>div {
+    flex: 1 1 0;
+}
+
+.flexbox .content {flex: 4 1 0}
+
+.boxHighlights {margin-top: 490px; height: 290px}
+
+.boxHighlights table {width: 100%}
+.boxHighlights table td {width: 25%}
+
+.boxHighlights div {
+    margin: 15px;
+    padding: 25px;
+    background: rgba(255,255,255,.93);
+    margin: 10px;
+    text-align: center;
+
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    xtransition: box-shadow 0.2s, zoom 0.2s, margin 0.2s ;
+}
+
+.boxHighlights div:hover {
+    background: rgba(255,255,255,.99);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    zoom: 1.1;
+    margin: 0
+}
+
+
+.boxHighlights h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 12px -25px -15px -25px;
+    padding: 12px;
+    xbackground: rgba(0,0,0,.8);
+    color: #083e88;
+
+}
+
+.boxHighlights img {
+    width: 160px;
+    opacity: 0.7
+
+}
+
+.boxHighlights a i {font-size: 70px; opacity: 0.8; color: #444; font-weight: normal }
+
+#sidemenu {
+    font-size: 90%;
+    padding-right: 25px
+}
+
+#sidemenu ul {
+    margin: 0px;
+    padding: 0
+}
+
+#sidemenu a {
+    opacity: 0.8;
+    transition: color 400ms, opacity 400ms}
+
+#sidemenu a.active {color: #c4261d; font-weight: 400; opacity: 1}
+#sidemenu a:hover {color: #c4261d; opacity: 1 }
+
+
+#sidemenu>ul {list-style-type: none; border-top: 1px solid #eee}
+#sidemenu>ul>li {  padding: 8px 10px; border-bottom: 1px solid #eee}
+#sidemenu>ul ul {
+    background: white; 
+    border-bottom: 1px solid #eee
+}
+#sidemenu>ul ul li {
+    background: white; margin: 6px 0 6px 40px;
+    font-size: 95%
+}
+
+
+
+#footer {
+    font-size: 14px;
+    color: rgba(255,255,255,.8);
+    background: rgba(0,0,0,.8);
+    padding: 15px 0;
+}
+
+#footer a {
+    color: white;
+    font-weight: normal
+}
+
+
+.bold {font-weight: bold}
+.small {font-size: 85%; opacity: 0.8}
+.tiny {font-size: 75%; opacity: 0.8}
+.hidden {display: none}
+.spacer {display: block; clear: both; visibility: hidden; height: 40px}
+xxx.clear {visibility: hidden;}
+.clear:after, .clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0px;
+}
+
+.twocol p {column-count: 2; column-gap: 50px; column-rule: 1px solid silver; text-align: justify}
+
+:focus {outline: none}
+
+
+
+
+
+.icoForm label{
+    color: #083e88;
+    background-color: silver;
+    border: 1px solid silver;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    float: left;
+    margin: 0;
+    height: 28px;
+    width: 29px;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 4px 4px 4px 8px;
+}
+
+.icoForm .icon-lock { padding: 4px 0px 4px 12px;}
+
+.icoForm input {
+    box-sizing: border-box;
+    font-size: 24px;
+    padding: 2px 6px;
+    height: 38px;
+    margin-bottom: 15px;
+    border: 1px solid silver;
+    border-left: none;
+    width: 300px
+}
+
+
+
+fieldset {
+    border: none; outline: none;
+    padding: 0;
+    margin: 0 -15px;
+
+}
+
+.fieldset-wrapper>div {
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+    margin: 0 0 15px;
+}
+
+.row-full .fieldset-wrapper>div {   width: 100%; }
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 400;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid #d3d3d4;
+}
+
+textarea {height: 50px}
+
+.fieldset-wrapper .row-4zip{width: 17%}
+.fieldset-wrapper .row-4city {width: 33%}
+label.datenschutz {
+    position: relative;
+    padding-left: 1.95em;
+    cursor: pointer;
+}
+
+table {border-collapse: collapse;
+}
+
+table td {padding: 3px 6px}
+
+.striped tr:nth-child(odd) td {background: #eee}
+
+input[type=checkbox] {
+    zoom: 2;
+    float: left;
+    width: 15px;
+    margin-right: 10px
+}
+
+
+button, .btn {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    margin: 10px 0;
+    background: #083e88;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+
+
+.floatLeft {float: left;
+            margin: 0 20px 20px 0
+}
+.floatRight {float: right;
+             margin: 0 0px 20px 20px
+}
+
+
+
+
+
+
+

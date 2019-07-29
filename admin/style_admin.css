@@ -1,0 +1,165 @@
+
+/* 
+
+
+INDIVIDUAL STYLES FOR   T H I S  BACKEND (ONLY)
+
+
+
+
+
+
+color codes
+
+green:  #e9f802
+orange: coral
+blue: #035aa2  - #3B5998
+
+*/
+
+
+h1.toptitle {font-size: 38px; color: #035aa2; margin: 8px 0!important; padding: 6px 12px}
+h1, h2, h3 {font-family: 'Ubuntu', sans-serif;}
+/*xxxh1:first-child, h2:first-child, h3:first-child {margin: 0 0 8px 0}*/
+
+.page>h2 {
+    margin: 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #999
+}
+
+
+
+
+.content #navButtons {
+    margin: -12px -20px 12px -20px
+}
+
+#navButtons button {
+    height: 23px;
+    font-size: 16px;    
+    margin: 0 10px 0 0 ;
+        border: none;
+    border-radius: 0
+}
+
+#navButtons button i {padding: 0 7px}
+
+
+
+#search, #navButtons button {
+    display: inline-block;
+    margin-top: 0;
+    float: left;
+}
+
+#search {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 6px;
+    font-size: 22px; width: 250px;
+
+}
+
+.box {
+    box-sizing: border-box;
+    width: 100%
+}
+
+
+#breadcrumbs {
+    padding: 3px 20px; 
+    background: #ccc; color: #777;
+    height: 16px;
+    font-size: 12px;
+    margin: 5px 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+
+/* editor fonts*/
+.trumbowyg h1 {
+    box-sizing: border-box;
+    color: rgb(78, 78, 84);
+    font-family: "Univers LT W04_55 Roman1475960",Arial,Helvetica,sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+
+.trumbowyg h2 {
+    color: rgb(78, 78, 84);
+    font-size: 32px;
+    font-weight: 400;
+    height: 32px;
+    left: auto;
+    line-height: 32px;
+    margin-bottom: 28px;
+}
+
+
+
+.content #folders {  margin: -10px;}
+.media #folders {margin: 10px 0}
+
+.content #files{ 
+    margin: 20px -10px;
+    padding-top: 10px;
+    border-top: 1px solid #999
+}
+
+#folders .folder, #folders .file {
+    font-size: 13px;
+    line-height: 32px;
+    background: #FFA; 
+    color: white;
+    padding: 5px 10px; 
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 3px
+}
+
+#folders .folder {
+    color: #666; 
+    font-size: 95%;
+    box-shadow: 1px 1px 1px #aaa
+    
+}
+
+
+#folders .file {background: #e5e5e5;
+       border: 1px solid #261868;
+       color: #666}
+
+.btnBox {
+    margin: 20px -20px -20px -20px;
+    padding: 10px 20px;
+    background: rgba(0,0,0,.2)
+        
+}
+
+.btnBox button {
+    font-size: 13px; 
+    margin: 0 6px 0 0
+}
+
+#previewPic {
+    
+}
+#previewPic img {
+    width: 90%}
+
+.btnInsertImage {float: right}
+
+#settingsPic i {
+    padding: 2px 3px;
+    border-radius: 3px
+}
+
+.alignRight {text-align: right}

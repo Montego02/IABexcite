@@ -1,0 +1,211 @@
+
+.main {background: white; padding-top: 200px;}
+
+
+/*   P H O N E   */
+
+#refApps {
+    position: absolute;
+    left: calc(38% - 380px);
+    width: 400px
+}
+
+
+.phone {
+    width: 380px;
+    height: 700px;
+    background-image: url(../images/sd/smartphone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 43px;
+    box-shadow: 6px 0 14px -4px rgba(0,0,0, .3), -3px 0 7px -4px rgba(0,0,0, .3);
+}
+
+.phoneUnlit {
+    background-image: url(../images/sd/smartphoneUnlit.png);
+    xbox-shadow: 6px 0 14px -4px rgba(0,0,0, .3), -3px 0 7px -4px rgba(0,0,0, .3);
+}
+
+.blk .phoneUnlit {
+    background-image: url(../images/sd/smartphoneUnlitBlk.png);
+}
+
+.phoneShade {
+   opacity: 0.05;
+    background: #111;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(155,155,155, 1);
+}
+
+.phoneBody {
+    opacity: 0.95;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0x 0 -4px 4px #eee
+}
+
+.blk .phoneBody {
+    background: #555;
+}
+
+
+
+.phone .display {
+    position: relative;
+    width: 100%;
+    height: 569px;
+    overflow: hidden;
+    margin: 64px auto 0 auto
+}
+
+
+
+.phone .shots img {
+    position: absolute;
+    left: 380px; top: 0;
+    width: 100%;
+}
+
+
+
+
+.phone .shots img:first-child {left: 0}
+
+
+
+
+
+
+
+
+
+/* PARALLAX */
+
+
+.parallaxBox{
+    display: block;
+    position: absolute;
+    background-image: white;
+    width: 380px;
+    height: 700px; 
+
+    
+    perspective: 3000;
+
+    font-size: 60px;
+    color: #444;
+    text-align: center;
+
+}
+
+.parallaxLayers {
+    width: 100%; height: 100%;
+    transform-style: preserve-3d;
+    /*box-shadow: 25px 15px 0 rgba(0,0,0,.1);*/
+}
+
+.parallaxLayers > div {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+}
+
+.parallaxBox .shine {
+    left: -10%;
+    top: -10%;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 34%, rgba(255, 255, 255, 0) 34%, rgba(255, 255, 255, 0) 100%), linear-gradient(353.174deg, rgba(255, 255, 255, 0.09) 0px, rgba(255, 255, 255, 0) 80%);
+}
+
+.textshadowRef {
+    max-width: 300px;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 32px;
+    color: #777;
+    
+    text-shadow: 0 0 1px #999, 1px 2px 7px rgba(0,0,0,.2);
+}
+
+.parallaxLayers div {
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.parallaxLayers > div:nth-child(1) { transform: translateZ(90px);}  /* shdow */
+.parallaxLayers > div:nth-child(2) { transform: translateZ(100px);}  /* body */
+.parallaxLayers > div:nth-child(3) { transform: translateZ(130px);}  /* display */
+.parallaxLayers > div:nth-child(4) { transform: translateZ(200px);}
+.parallaxLayers > div:nth-child(5), 
+.parallaxLayers > div:nth-child(6) { transform: translateZ(250px);}  /* top & shine */
+
+
+
+
+.iabLogo, .parallaxLayers .iabLogo {
+    width: 200px; 
+    height: auto; 
+    left: 90px; 
+    top: 600px; 
+    padding: 20px 30px ; 
+    background: rgba(255,255,255,.8); 
+    border-radius: 12px;
+}
+
+.blk .parallaxBox .iabLogo {  background: rgba(0,0,0,.7); }
+
+
+
+
+.expl {
+    position: absolute;
+    left: 41%;
+    width: 40%;
+    padding: 2%;
+    background-color: rgba(200,200,205,.5);
+    background: linear-gradient(135deg, #fafafa 0%,#e0e1e2 80%, #ccc 100%);
+    background-size: cover;
+    background-position: center;
+    color: rgba(0,0,0,.7); 
+    box-shadow: 0 -1px 1px rgba(0,0,0,.2)
+}
+
+.expl::after {
+    content: "";
+    background-image: url(../images/sd/bg/bgPoly5.svg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+
+.expl .type, .expl .os {
+    float: left;
+    display: inline-block;
+    font-size: 80%;
+    margin: -28px 6px 0 0px; 
+    padding: 5px 10px;
+   background: #ddd;
+   border-bottom-left-radius: 8px; border-bottom-right-radius: 8px
+}
+
+.expl .os {}
+.expl .type {background: #d21e29; color: white}
+
+.expl h2 {margin-bottom: 4px}
+.expl h3 {margin: 0 0 8px 0; color: #bbb}
+
+
+.nextRef, .prevRef {color: #0180CC}

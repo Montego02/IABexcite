@@ -1,0 +1,7 @@
+Userlevels
+==========
+
+0: Registerd           -  no rights to access backend
+1: Editor              -  basic backend user, can add and edit own, cannot edit others or delete
+2: manager             -  can edit everything but delete only own
+3: admin               -  full rights

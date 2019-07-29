@@ -1,0 +1,52 @@
+#ErrorDocument 404 /404.htm
+
+
+
+# DISABLE CACHING
+#<IfModule mod_headers.c>
+#	Header set Cache-Control "no-cache, no-store, must-revalidate"
+#	Header set Pragma "no-cache"
+#	Header set Expires 0
+#</IfModule>
+
+
+
+
+
+
+#=======================================================================================
+#ROUTING
+
+RewriteEngine on
+#
+## forward www to non-www
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+#
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+# anfragen auf /images nicht routen
+RewriteCond %{REQUEST_URI} ^/images
+RewriteCond %{REQUEST_URI} ^/js
+
+RewriteRule ^ - [L,QSA]
+
+
+
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{QUERY_STRING} !^noroute=1$ 
+
+RewriteRule ^(.*)$ /index.php?path=$1 [NC,QSA]
+
+
+RewriteRule ^(db\.php|php\.ini|controller\.php)$ - [F]
+
+## Disallow front-end access for certain  system directories
+RewriteRule ^includes/ - [L]
+#RewriteRule ^(admin/components)/ - [F] 
+

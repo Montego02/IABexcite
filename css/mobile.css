@@ -1,0 +1,50 @@
+
+
+@media only screen and (max-width: 700px) {
+    /*    .phone {
+            width: 100%;
+            background-image: url(../images/sd/iphone.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+    
+        .phone:after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+        }*/
+
+
+    header h2 {font-size: 51px}
+    
+    article, .page {
+       
+    }
+    
+    .wrapper {padding: 10px 25px}
+    
+    .box2 {
+        padding: 25px;
+        margin: 25px 0
+    }
+    
+    .rightcol, #right, .aside {display: none}
+
+/*    .flexbox, .flexbox>div {display: block}*/
+    .flexbox>div {height: 100vw!important}
+    
+    .pad50 {
+        font-size: 85%; /* websites */
+        padding: 10px;}
+
+
+    .mobile {display: block}
+    
+    .desktop, .mobilehidden  {display: none}
+
+}
+
